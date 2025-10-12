@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReadLens - プライバシーポリシー</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #2563eb;
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    .last-updated {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #1e40af;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 24px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #374151;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #4b5563;
+    }
+
+    ul, ol {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #4b5563;
+    }
+
+    .highlight-box {
+      background: #eff6ff;
+      border-left: 4px solid #2563eb;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box h3 {
+      color: #1e40af;
+      margin-top: 0;
+    }
+
+    .contact {
+      background: #f9fafb;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 ReadLens プライバシーポリシー</h1>
+    <p class="last-updated">最終更新日：2025年10月11日</p>
+
+    <div class="highlight-box">
+      <h3>🔒 コアコミットメント</h3>
+      <p><strong>ReadLens は完全にローカルなアプリケーションです。</strong>すべてのデータはお客様のデバイスに保存されます。私たちはお客様の個人データを<strong>収集、保存、送信することは決してありません</strong>。</p>
+    </div>
+
+    <h2>1. どのようなデータを収集しますか？</h2>
+
+    <h3>短い回答：何も収集しません</h3>
+    <p>ReadLens は<strong>いかなる個人データも収集しません</strong>。すべてのデータはお客様のデバイスにローカルに保存されます。</p>
+
+    <h3>詳細説明</h3>
+    <p>ReadLens は以下のデータを<strong>お客様のデバイス上にのみ</strong>保存します：</p>
+    <ul>
+      <li><strong>保存された記事</strong>：保存を選択したウェブコンテンツ</li>
+      <li><strong>AI 要約</strong>：API キーで生成された要約（有効な場合）</li>
+      <li><strong>タグとメモ</strong>：記事に追加したタグと個人メモ</li>
+      <li><strong>設定</strong>：アプリの環境設定（テーマ、言語など）</li>
+      <li><strong>API キー</strong>：AI サービスの API キー（<strong>ローカルで暗号化</strong>）</li>
+    </ul>
+
+    <p><strong>上記のすべてのデータはお客様のデバイスにのみ保存されます。ReadLens チームはこれらにアクセスできません。</strong></p>
+
+    <h2>2. データをどのように使用しますか？</h2>
+
+    <p>ReadLens はお客様のデータを使用またはアクセスしません。理由：</p>
+    <ul>
+      <li>✅ <strong>サーバーなし</strong>：データを収集するバックエンドサーバーはありません</li>
+      <li>✅ <strong>アカウントシステムなし</strong>：登録やログインは不要です</li>
+      <li>✅ <strong>データアップロードなし</strong>：データはデバイスから出ることはありません</li>
+      <li>✅ <strong>サードパーティトラッキングなし</strong>：Google Analytics やトラッキングツールはありません</li>
+    </ul>
+
+    <h2>3. AI 機能と API キー</h2>
+
+    <div class="highlight-box">
+      <h3>🔑 BYOK（Bring Your Own Key）モデル</h3>
+      <p>ReadLens は「自分のキーを持ち込む」アプローチを使用します。これは次を意味します：</p>
+    </div>
+
+    <h3>お客様の API キー</h3>
+    <ul>
+      <li><strong>暗号化ストレージ</strong>：API キーは AES-256 暗号化でデバイスに保存されます</li>
+      <li><strong>直接接続</strong>：ReadLens はコンテンツを AI プロバイダー（OpenAI、Claude など）に直接送信します</li>
+      <li><strong>仲介者なし</strong>：中間サーバーはありません。リクエストを見たり記録したりすることはできません</li>
+      <li><strong>お客様の管理</strong>：いつでも API キーを削除または変更できます</li>
+    </ul>
+
+    <h3>AI プロバイダーへのデータ転送</h3>
+    <p>AI 要約機能を使用する場合：</p>
+    <ul>
+      <li>記事のコンテンツは、ブラウザから選択した AI プロバイダーに<strong>直接</strong>送信されます</li>
+      <li>このデータは ReadLens サーバーを<strong>経由しません</strong>（サーバーはありません）</li>
+      <li>各 AI プロバイダーのプライバシーポリシーを確認してください：
+        <ul>
+          <li><a href="https://openai.com/privacy/" target="_blank">OpenAI プライバシーポリシー</a></li>
+          <li><a href="https://www.anthropic.com/privacy" target="_blank">Anthropic (Claude) プライバシーポリシー</a></li>
+          <li><a href="https://policies.google.com/privacy" target="_blank">Google (Gemini) プライバシーポリシー</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>4. Chrome 拡張機能の権限</h2>
+
+    <p>ReadLens は以下の Chrome 権限を必要とします：</p>
+
+    <h3>activeTab（現在のタブ）</h3>
+    <p><strong>目的</strong>：記事を保存するために表示中のウェブページからコンテンツを読み取ります</p>
+    <p><strong>データの宛先</strong>：ローカルデバイスにのみ保存されます</p>
+
+    <h3>storage と unlimitedStorage</h3>
+    <p><strong>目的</strong>：デバイスに記事、設定、API キーを保存します</p>
+    <p><strong>データの宛先</strong>：ローカル Chrome ストレージにのみ保存されます</p>
+
+    <h3>contextMenus（コンテキストメニュー）</h3>
+    <p><strong>目的</strong>：右クリックで素早く保存する機能を提供します</p>
+    <p><strong>データの宛先</strong>：データ収集なし</p>
+
+    <h3>notifications</h3>
+    <p><strong>目的</strong>：保存の成功/失敗通知を表示します</p>
+    <p><strong>データの宛先</strong>：データ収集なし</p>
+
+    <h3>https://*/*（ネットワークアクセス）</h3>
+    <p><strong>目的</strong>：ウェブページからコンテンツを抽出し、AI プロバイダー API に接続します</p>
+    <p><strong>データの宛先</strong>：選択した AI プロバイダーにのみ送信されます（AI 機能が有効な場合）</p>
+
+    <h2>5. サードパーティサービス</h2>
+
+    <p>ReadLens 自体は<strong>いかなるサードパーティサービスも使用しません</strong>。ただし：</p>
+
+    <h3>オプションの AI サービス（BYOK）</h3>
+    <p>AI 要約機能を有効にして独自の API キーを提供する場合：</p>
+    <ul>
+      <li>記事のコンテンツは選択した AI プロバイダーに送信されます</li>
+      <li>これらのプロバイダーには独自のプライバシーポリシーがあります</li>
+      <li>ReadLens はこれらの送信を<strong>見たり記録したりすることはありません</strong></li>
+    </ul>
+
+    <h3>使用していないサービス</h3>
+    <ul>
+      <li>❌ Google Analytics</li>
+      <li>❌ 広告ネットワーク</li>
+      <li>❌ ソーシャルメディアトラッキング</li>
+      <li>❌ あらゆる形式の使用状況トラッキング</li>
+    </ul>
+
+    <h2>6. データセキュリティ</h2>
+
+    <h3>ローカル暗号化</h3>
+    <ul>
+      <li>API キーは <strong>AES-256 暗号化</strong>で保存されます</li>
+      <li>暗号化キーはブラウザに保存されます</li>
+      <li>誰かがデバイスストレージにアクセスしても、復号化キーなしでは API キーを読み取ることはできません</li>
+    </ul>
+
+    <h3>入力検証</h3>
+    <ul>
+      <li>すべてのユーザー入力は検証およびサニタイズされます</li>
+      <li>XSS（クロスサイトスクリプティング）攻撃に対する保護</li>
+      <li>HTML コンテンツは自動的にサニタイズされます</li>
+    </ul>
+
+    <h2>7. データの保持と削除</h2>
+
+    <h3>データの保持</h3>
+    <p>すべてのデータはデバイスに保存されるため：</p>
+    <ul>
+      <li>データは<strong>お客様が能動的に削除する</strong>まで保持されます</li>
+      <li>設定でいつでもすべてのデータをクリアできます</li>
+      <li>拡張機能をアンインストールすると、すべての ReadLens データが自動的に削除されます</li>
+    </ul>
+
+    <h3>データの削除方法</h3>
+    <ol>
+      <li><strong>個別の記事を削除</strong>：記事リストの削除ボタンをクリックします</li>
+      <li><strong>すべてのデータをクリア</strong>：設定 → データ管理 → すべてのデータを削除</li>
+      <li><strong>完全削除</strong>：Chrome から ReadLens 拡張機能をアンインストールします</li>
+    </ol>
+
+    <h2>8. 児童のプライバシー</h2>
+
+    <p>ReadLens は13歳未満の児童を対象としていません。私たちは児童から故意に個人データを収集することはありません（実際、誰のデータも収集しません）。</p>
+
+    <h2>9. プライバシーポリシーの変更</h2>
+
+    <p>このプライバシーポリシーを変更する場合：</p>
+    <ul>
+      <li>このページの上部にある「最終更新日」を更新します</li>
+      <li>主な変更は拡張機能の更新ノートで発表されます</li>
+      <li>最新バージョンのプライバシーポリシーはいつでも表示できます</li>
+    </ul>
+
+    <h2>10. お客様の権利</h2>
+
+    <p>ReadLens はデータを収集しないため、従来のデータ主体の権利（アクセス、訂正、削除など）は適用されません。</p>
+
+    <p>しかし、お客様には<strong>完全な管理権</strong>があります：</p>
+    <ul>
+      <li>✅ いつでもローカルデータを表示、編集、削除できます</li>
+      <li>✅ いつでもデータをエクスポートできます（JSON、Markdown、CSV 形式）</li>
+      <li>✅ いつでも AI 機能を無効化または削除できます</li>
+      <li>✅ API キーを完全に管理できます</li>
+    </ul>
+
+    <h2>11. お問い合わせ</h2>
+
+    <div class="contact">
+      <p>このプライバシーポリシーについて質問がある場合：</p>
+      <ul>
+        <li>📧 <strong>メール</strong>：<a href="mailto:privacy@readlens.app">privacy@readlens.app</a></li>
+        <li>🐛 <strong>GitHub Issues</strong>：<a href="https://github.com/readlens/readlens/issues" target="_blank">github.com/readlens/readlens/issues</a></li>
+        <li>🌐 <strong>ウェブサイト</strong>：<a href="https://readlens.app" target="_blank">readlens.app</a></li>
+      </ul>
+    </div>
+
+    <h2>12. 準拠法</h2>
+
+    <p>このプライバシーポリシーは台湾の法律に準拠します。EU ユーザーについては、GDPR の原則を遵守します（ただし、データを収集しないため、ほとんどの GDPR 要件は適用されません）。</p>
+
+    <div class="highlight-box" style="margin-top: 40px;">
+      <h3>💡 まとめ</h3>
+      <p><strong>ReadLens のプライバシーに対する約束はシンプルです：データはデバイスから出ることがないため、私たちはお客様のデータを見ることができません。</strong></p>
+      <ul>
+        <li>✅ データ収集ゼロ</li>
+        <li>✅ トラッキングゼロ</li>
+        <li>✅ サーバーへのアップロードゼロ（サーバーがないため）</li>
+        <li>✅ 完全なプライバシー保護</li>
+      </ul>
+    </div>
+
+    <p style="text-align: center; margin-top: 40px; color: #9ca3af; font-size: 14px;">
+      © 2025 ReadLens. All rights reserved.
+    </p>
+  </div>
+</body>
+</html>
